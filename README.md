@@ -1,11 +1,11 @@
-# Simulateur LMNP Régime Réel
+# Simulateur LMNP Régime Réel (Complet)
 
-Ce dépôt contient un script Python pour simuler le calcul du résultat imposable en LMNP au régime réel.
+Ce dépôt contient un script Python pour simuler le calcul du résultat imposable annuel en LMNP au régime réel, en tenant compte des amortissements détaillés par composant.
 
 ## Utilisation
 
 1.  Assurez-vous d'avoir Python installé.
-2.  Créez un fichier `expenses.csv` avec vos dépenses (catégorie, montant, date).
+2.  Modifiez les fichiers `data.csv` et `amortissements.csv` avec vos propres données.
 3.  Exécutez le script `lmnp_simulator.py`.
 
 ## Dépendances
@@ -14,6 +14,6 @@ Ce dépôt contient un script Python pour simuler le calcul du résultat imposab
 
 ## Personnalisation
 
-* Modifiez le fichier `expenses.csv` pour refléter vos propres dépenses.
-* Ajustez la variable `revenus_locatifs` dans le script.
-* Pour la prise en compte des amortissements, il faudrait rajouter une colonne dans le fichier *expenses.csv*, et rajouter le calcul de l'ammortissement dans la fonction *calculer\_resultat\_lmnp*.
+* Ajustez les valeurs dans les fichiers CSV pour refléter votre situation.
+* Modifiez les durées d'amortissement dans le fichier `amortissements.csv` si nécessaire.
+* Améliorez le script pour prendre en compte d'autres facteurs (reports de déficit, etc.).
